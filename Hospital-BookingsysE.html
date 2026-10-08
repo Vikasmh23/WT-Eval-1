@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Appointment Booking System</title>
+  <link rel="stylesheet" href="Hospital-BookingsysE.css">
+</head>
+<body>
+
+  <h1>Hospital Appointment Booking System</h1>
+
+  <div class="container">
+
+    <div class="form-section">
+      <h2>Patient Details</h2>
+
+      <label>Name:</label><br>
+      <input type="text" id="patientName"><br><br>
+
+      <label>Age:</label><br>
+      <input type="number" id="age"><br><br>
+
+      <button type="button">Submit</button>
+
+      <hr>
+
+      <h2>Appointment Details</h2>
+
+      <label>Patient Name:</label><br>
+      <input type="text" id="appointmentPatientName"><br><br>
+
+      <label>Doctor Name:</label><br>
+      <select id="doctorName">
+        <option value="Dr. Arunkumar">Dr. Arunkumar</option>
+        <option value="Dr. Uday">Dr. Uday</option>
+        <option value="Dr. Akshay">Dr. Akshay</option>
+      </select><br><br>
+
+      <label>Available Date:</label><br>
+      <input type="date" id="availableDate" required><br><br>
+
+      <label>Time Slot:</label><br>
+      <input type="time" id="timeSlot"><br><br>
+
+      <label>Reason for Consultation:</label><br>
+      <textarea id="reason"></textarea><br><br>
+
+      <button type="button" onclick="bookAppointment()">Book Appointment</button>
+
+      <hr>
+
+      <h2>Details of Booking</h2>
+      <p id="bookingDetails"></p>
+    </div>
+
+    <div class="doctor-list">
+      <h4>Doctors</h4>
+      <p> *Dr. Arunkumar, Dermatology, 9-12PM.</p>
+      <p> *Dr. Uday, Pathology, 10-1PM.</p>
+      <p> *Dr. Akshay, General Medicine, 1-6PM.</p>
+    </div>
+
+  </div>
+
+  <script src="Hospital-BookingsysE.js"></script>
+
+</body>
+</html>
